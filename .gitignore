@@ -10,3 +10,4 @@ vendor/
 obj/
 __pycache__/
 .venv/
+railpack-plan.json
