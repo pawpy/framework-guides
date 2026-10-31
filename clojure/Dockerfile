@@ -6,5 +6,5 @@ COPY . .
 RUN lein uberjar
 
 FROM eclipse-temurin:21-jre
-COPY --from=build /app/target/uberjar/my-app.jar /app/app.jar
+COPY --from=build /app/target/my-app.jar /app/app.jar
 CMD ["java", "-jar", "/app/app.jar"]

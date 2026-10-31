@@ -5,4 +5,9 @@ connections:
   - to: db
     as: DB_URL
 hooks:
-  release: php artisan migrate --force
+  release: php artisan config:clear && php artisan migrate --force
+processes:
+  - name: web
+    kind: web
+    port: 8080
+    command: php artisan config:clear && exec /start-container.sh
