@@ -2,7 +2,7 @@
 
 One minimal app per framework, each in its own directory. Each one is what a deploy guide builds, and is deployed from this repository, one directory per service, to check that the guide works.
 
-Every app listens on `PORT` on `0.0.0.0`. Where an app needs a database or a start command of its own, its `liftoff.yaml` says so.
+Every app listens on `PORT` on `0.0.0.0`. Where an app needs a database or a start command of its own, its `liftoff.yaml` says so; where Railpack cannot build it, it has a `Dockerfile`.
 
 - [`actix-web`](actix-web)
 - [`angular`](angular)
@@ -10,7 +10,9 @@ Every app listens on `PORT` on `0.0.0.0`. Where an app needs a database or a sta
 - [`astro`](astro)
 - [`astro-server`](astro-server)
 - [`axum`](axum)
+- [`beego`](beego)
 - [`bun`](bun)
+- [`clojure`](clojure)
 - [`deno`](deno)
 - [`django`](django)
 - [`express`](express)
@@ -18,14 +20,17 @@ Every app listens on `PORT` on `0.0.0.0`. Where an app needs a database or a sta
 - [`fastify`](fastify)
 - [`fiber`](fiber)
 - [`flask`](flask)
+- [`gatsby`](gatsby)
 - [`gin`](gin)
 - [`go`](go)
 - [`hono`](hono)
+- [`ktor`](ktor)
 - [`laravel`](laravel)
 - [`nestjs`](nestjs)
 - [`nextjs`](nextjs)
 - [`nuxt`](nuxt)
 - [`phoenix`](phoenix)
+- [`play`](play)
 - [`rails`](rails)
 - [`react`](react)
 - [`react-router`](react-router)
@@ -34,4 +39,5 @@ Every app listens on `PORT` on `0.0.0.0`. Where an app needs a database or a sta
 - [`spring-boot`](spring-boot)
 - [`starlette`](starlette)
 - [`sveltekit`](sveltekit)
+- [`symfony`](symfony)
 - [`vue`](vue)

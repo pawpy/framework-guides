@@ -1,0 +1,8 @@
+backing:
+  - name: db
+    type: postgres
+connections:
+  - to: db
+    as: DB_URL
+hooks:
+  release: php artisan migrate --force
