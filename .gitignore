@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+.output/
+.next/
+target/
+_build/
+deps/
+vendor/
+obj/
+__pycache__/
+.venv/

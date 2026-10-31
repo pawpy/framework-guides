@@ -1,0 +1,4 @@
+processes:
+  - name: web
+    kind: web
+    port: 8000

@@ -1,0 +1,12 @@
+backing:
+  - name: db
+    type: postgres
+connections:
+  - to: db
+hooks:
+  release: bin/rails db:migrate
+processes:
+  - name: web
+    kind: web
+    port: 8080
+    command: bundle exec bin/rails server -b 0.0.0.0 -p $PORT

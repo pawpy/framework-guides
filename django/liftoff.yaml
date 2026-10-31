@@ -1,0 +1,12 @@
+backing:
+  - name: db
+    type: postgres
+connections:
+  - to: db
+hooks:
+  release: python manage.py migrate
+processes:
+  - name: web
+    kind: web
+    port: 8080
+    command: gunicorn --bind 0.0.0.0:$PORT mysite.wsgi

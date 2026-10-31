@@ -1,0 +1,37 @@
+# Framework guides
+
+One minimal app per framework, each in its own directory. Each one is what a deploy guide builds, and is deployed from this repository, one directory per service, to check that the guide works.
+
+Every app listens on `PORT` on `0.0.0.0`. Where an app needs a database or a start command of its own, its `liftoff.yaml` says so.
+
+- [`actix-web`](actix-web)
+- [`angular`](angular)
+- [`aspnet-core`](aspnet-core)
+- [`astro`](astro)
+- [`astro-server`](astro-server)
+- [`axum`](axum)
+- [`bun`](bun)
+- [`deno`](deno)
+- [`django`](django)
+- [`express`](express)
+- [`fastapi`](fastapi)
+- [`fastify`](fastify)
+- [`fiber`](fiber)
+- [`flask`](flask)
+- [`gin`](gin)
+- [`go`](go)
+- [`hono`](hono)
+- [`laravel`](laravel)
+- [`nestjs`](nestjs)
+- [`nextjs`](nextjs)
+- [`nuxt`](nuxt)
+- [`phoenix`](phoenix)
+- [`rails`](rails)
+- [`react`](react)
+- [`react-router`](react-router)
+- [`rocket`](rocket)
+- [`solid`](solid)
+- [`spring-boot`](spring-boot)
+- [`starlette`](starlette)
+- [`sveltekit`](sveltekit)
+- [`vue`](vue)
